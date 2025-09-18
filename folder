@@ -1,0 +1,13 @@
+// What a Folder will look like under the hood.
+
+[Folder Name: "Documents"]          // 32 bytes (padded with nulls if shorter)
+[Folder Size: 5]                    // 4 bytes (number of items it holds)
+[Owner Folder Location: 0x00000000] // 4 bytes (root folder in this case)
+[isFolder: 0x01]                    // 1 byte (true)
+
+[Content ->]
+[0x00000200]  // Location of item 1 (e.g., a TXT file)
+[0x00000220]  // Location of item 2 (e.g., another TXT)
+[0x00000240]  // Location of item 3 (e.g., a subfolder)
+[0x00000260]  // Location of item 4
+[0x00000280]  // Location of item 5

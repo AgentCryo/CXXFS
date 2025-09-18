@@ -1,0 +1,9 @@
+//What a Text Doc will look like.
+
+[File Name: "notes.txt"]            // 32 bytes
+[File Size: 128]                    // 4 bytes (actual content size in bytes)
+[Owner Folder Location: 0x00000100] // 4 bytes (points to "Documents" folder)
+[isFolder: 0x00]                    // 1 byte (false)
+
+[Content ->]
+"This is a sample text file.\nIt contains a few lines of text.\n..."
